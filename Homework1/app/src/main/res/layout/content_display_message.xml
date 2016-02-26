@@ -10,6 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="androidclass.homework1.DisplayMessageActivity"
-    tools:showIn="@layout/activity_display_message">
+    tools:showIn="@layout/activity_display_message"
+    android:id="@+id/content"
+    >
 
 </RelativeLayout>
