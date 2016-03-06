@@ -12,18 +12,6 @@ import android.widget.TextView;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
-    //beep
-    //beep
-
-    Intent intent = getIntent();
-    String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
-
-
-
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +19,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_message);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
